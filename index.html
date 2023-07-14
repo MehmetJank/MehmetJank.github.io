@@ -15,9 +15,8 @@
     the `--base-href` argument provided to `flutter build`.
   -->
 
-    <!-- <base href="https://mehmetjank.github.io/" /> -->
+    <base href="https://mehmetjank.github.io/" />   
 
-    <base href="/" />
     <meta charset="UTF-8" />
     <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
     <meta name="description" content="A new Flutter project." />
@@ -184,25 +183,13 @@
       }
     </style>
 
-    <!-- <script>
+    <script>
       // The value below is injected by flutter build, do not touch.
-      var serviceWorkerVersion = "713673400";
+      var serviceWorkerVersion = "2597142431";
     </script> -->
 
     <!-- This script adds the flutter initialization JS code -->
-    <!-- <script src="flutter.js" defer></script> -->
-
-    <script type="application/javascript">
-      function openLink(url, target, isAsync = false) {
-        var is_safari = /^(?!.*chrome).*safari/i.test(
-          navigator.userAgent.toLowerCase()
-        );
-        if (is_safari && isAsync) {
-          window.location.href = url;
-        } else {
-          window.open(url, target);
-        }
-      }
+    <script src="flutter.js" defer></script>
     </script>
   </head>
   <body>
@@ -294,7 +281,7 @@
         </g>
       </g>
     </svg>
-    <!-- <script>
+    <script>
       window.addEventListener("load", function (ev) {
         // Download main.dart.js
         _flutter.loader.loadEntrypoint({
@@ -308,27 +295,6 @@
           },
         });
       });
-    </script> -->
-    <!-- <script type="application/javascript">
-      function openLink(url, target, isAsync = false) {
-        var is_safari = /^(?!.*chrome).*safari/i.test(
-          navigator.userAgent.toLowerCase()
-        );
-        if (is_safari && isAsync) {
-          window.location.href = url;
-        } else {
-          window.open(url, target);
-        }
-      }
-    </script> -->
-
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker.register("flutter_service_worker.js");
-        });
-      }
     </script>
-    <script src="main.dart.js" type="application/javascript"></script>
   </body>
 </html>
