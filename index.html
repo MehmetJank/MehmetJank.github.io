@@ -17,6 +17,7 @@
 
     <!-- <base href="https://mehmetjank.github.io/" /> -->
 
+    <base href="/" />
     <meta charset="UTF-8" />
     <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
     <meta name="description" content="A new Flutter project." />
@@ -24,13 +25,13 @@
     <!-- iOS meta tags & icons -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="portfolio" />
+    <meta name="apple-mobile-web-app-title" content="Mehmet Jank Portfolio" />
     <link rel="apple-touch-icon" href="icons/Icon-192.png" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png" />
 
-    <title>portfolio</title>
+    <title>Mehmet Jank Portfolio</title>
     <link rel="manifest" href="manifest.json" />
 
     <style>
@@ -183,12 +184,26 @@
       }
     </style>
 
-    <script>
+    <!-- <script>
       // The value below is injected by flutter build, do not touch.
-      var serviceWorkerVersion = "1360233864";
-    </script>
+      var serviceWorkerVersion = "1092263709";
+    </script> -->
+
     <!-- This script adds the flutter initialization JS code -->
-    <script src="flutter.js" defer></script>
+    <!-- <script src="flutter.js" defer></script> -->
+
+    <script type="application/javascript">
+      function openLink(url, target, isAsync = false) {
+        var is_safari = /^(?!.*chrome).*safari/i.test(
+          navigator.userAgent.toLowerCase()
+        );
+        if (is_safari && isAsync) {
+          window.location.href = url;
+        } else {
+          window.open(url, target);
+        }
+      }
+    </script>
   </head>
   <body>
     <svg
@@ -306,18 +321,7 @@
         }
       }
     </script> -->
-    <script type="application/javascript">
-      function openLink(url, target, isAsync = false) {
-        var is_safari = /^(?!.*chrome).*safari/i.test(
-          navigator.userAgent.toLowerCase()
-        );
-        if (is_safari && isAsync) {
-          window.location.href = url;
-        } else {
-          window.open(url, target);
-        }
-      }
-    </script>
+
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
